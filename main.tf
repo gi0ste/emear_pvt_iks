@@ -38,6 +38,7 @@ module "terraform-intersight-iks" {
 
     runtime_policy = {
         use_existing = true
+        create_new = false
         name = "evolve_iks_cluster_runtime_policy"
     }
 
