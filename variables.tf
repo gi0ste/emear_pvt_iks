@@ -7,6 +7,11 @@ variable "intersight_secret_key" {
   description = "Secret Key or file location"
 }
 
+variable "iks_cluster_name" {
+  type        = string
+  description = "Name of IKS cluster"
+}
+
 variable "iks_ssh_user" {
   type        = string
   description = "SSH Username for node login."

@@ -10,7 +10,7 @@ module "terraform-intersight-iks" {
     version ="2.0.3"
 
     cluster = {
-        name = "emear-pvt-iks"
+        name = var.iks_cluster_name
         action = "Deploy"
         wait_for_completion = false
         worker_nodes = 1
@@ -33,7 +33,7 @@ module "terraform-intersight-iks" {
 
     k8s_network = {
         use_existing = true
-        name = "evolve_iks_cluster_k8s_net_policy"
+        name = "rmlab-iks-network-policy"
     }
 
     runtime_policy = {
@@ -57,7 +57,7 @@ module "terraform-intersight-iks" {
     # Infra Config Policy Information
     infra_config_policy = {
         use_existing = true
-        name = "RMLAB-IKS-VM-CONFIG"
+        name = "emear_pvt_iks_vm_infra"
     }
 
     instance_type = {
