@@ -5,8 +5,8 @@ provider "intersight" {
 }
 
 module "terraform-intersight-iks" {
-    source  = "terraform-cisco-modules/iks/intersight"
-    #source = "app.terraform.io/Cisco-IST-TigerTeam/iks/intersight"
+    #source  = "terraform-cisco-modules/iks/intersight"
+    source = "app.terraform.io/rm-lab/iks/intersight"
     version ="2.0.3"
 
     cluster = {
