@@ -4,7 +4,7 @@ provider "intersight" {
   endpoint  = var.intersight_endpoint
 }
 
-/*module "terraform-intersight-iks" {
+module "terraform-intersight-iks" {
     #source  = "terraform-cisco-modules/iks/intersight"
     source = "app.terraform.io/rm-lab/iks/intersight"
     version ="2.0.3"
@@ -67,5 +67,3 @@ provider "intersight" {
     
     organization = var.intersight_organization
 }
-
-*/
